@@ -1,56 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Resume</title>
-  <style>
-    body {font-family: Arial, sans-serif; margin:0; background:#f4f4f9; color:#333;}
-    header {background:#2c3e50; color:#fff; text-align:center; padding:20px;}
-    h1 {margin:0;}
-    .container {width:80%; margin:auto; padding:20px;}
-    section {background:#fff; margin:15px 0; padding:15px; border-radius:6px; box-shadow:0 2px 5px rgba(0,0,0,0.1);}
-    h2 {color:#2c3e50; margin-top:0; border-bottom:1px solid #ccc; padding-bottom:5px;}
-    .skills span {background:#3498db; color:#fff; padding:5px 10px; margin:5px; border-radius:4px; display:inline-block;}
-    footer {background:#2c3e50; color:#fff; text-align:center; padding:10px;}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Resume | Webpage</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>John Doe</h1>
-    <p>Web Developer | Designer</p>
-  </header>
 
-  <div class="container">
-    <section>
-      <h2>Personal Details</h2>
-      <p>Email: johndoe@example.com<br>Phone: 9876543210<br>Location: Thane, India</p>
-    </section>
+    <div class="container">
+        <header>
+            <h1>Your Name</h1>
+            <p class="subtitle">Aspiring Embedded Systems Engineer | Tech Enthusiast</p>
+        </header>
 
-    <section>
-      <h2>Education</h2>
-      <p>B.Tech in Computer Science – XYZ University</p>
-      <p>High School – ABC School</p>
-    </section>
+        <main>
+            <section id="about">
+                <h2>About Me</h2>
+                <p>A highly motivated individual with a passion for bridging the gap between hardware and software. Focused on developing efficient, scalable solutions in the field of electronics and automation.</p>
+            </section>
 
-    <section class="skills">
-      <h2>Skills</h2>
-      <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Python</span>
-    </section>
+            <section id="education">
+                <h2>Education</h2>
+                <div class="item">
+                    <h3>Bachelor of Engineering</h3>
+                    <p class="meta">University Name | 2022 - 2026</p>
+                    <p>Relevant coursework: Digital Electronics, Microcontrollers, and Circuit Analysis.</p>
+                </div>
+            </section>
 
-    <section>
-      <h2>Experience</h2>
-      <p><strong>Frontend Developer</strong> – Tech Solutions (2022–Present)</p>
-      <p><strong>Intern</strong> – WebWorks (2021)</p>
-    </section>
+            <section id="skills">
+                <h2>Skills</h2>
+                <ul class="skills-list">
+                    <li>C / C++</li>
+                    <li>Embedded Systems (STM32, ESP32)</li>
+                    <li>Circuit Simulation (Proteus/Multisim)</li>
+                    <li>HTML5 & CSS3</li>
+                    <li>Digital Marketing Basics</li>
+                </ul>
+            </section>
 
-    <section>
-      <h2>Contact</h2>
-      <p>LinkedIn: linkedin.com/in/johndoe<br>GitHub: github.com/johndoe</p>
-    </section>
-  </div>
+            <section id="experience">
+                <h2>Projects & Experience</h2>
+                <div class="item">
+                    <h3>AgroGuard-Offline (IoT Project)</h3>
+                    <p class="meta">Lead Developer | Jan 2026</p>
+                    <p>Developed a solar-powered soil monitoring system using ESP32 and voice alerts via DFPlayer Mini for agricultural automation.</p>
+                </div>
+                <div class="item">
+                    <h3>Social Media Branding</h3>
+                    <p class="meta">Freelance / Project | 2025</p>
+                    <p>Designed brand identity and engagement strategies for eco-friendly product startups.</p>
+                </div>
+            </section>
 
-  <footer>
-    <p>&copy; 2026 John Doe</p>
-  </footer>
+            <section id="contact">
+                <h2>Contact Information</h2>
+                <p><strong>Email:</strong> yourname@email.com</p>
+                <p><strong>LinkedIn:</strong> linkedin.com/in/yourprofile</p>
+                <p><strong>Location:</strong> Navi Mumbai, India</p>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Your Name. Built with HTML & CSS.</p>
+        </footer>
+    </div>
+
 </body>
 </html>

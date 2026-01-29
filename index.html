@@ -4,19 +4,29 @@
   <meta charset="UTF-8">
   <title>Resume</title>
   <style>
-    body {margin:0; font-family:Verdana, sans-serif; background:#f0f2f5; color:#333;}
-    header {background:linear-gradient(135deg,#6a11cb,#2575fc); color:#fff; text-align:center; padding:40px 20px;}
+    body {margin:0; font-family:'Segoe UI', sans-serif; background:#f0f2f5; color:#333;}
+    header {background:linear-gradient(135deg,#ff6f61,#ffcc00); color:#fff; text-align:center; padding:40px 20px;}
     header h1 {margin:0; font-size:2.5em;}
     header p {margin:5px 0; font-size:1.2em;}
-    .container {width:85%; margin:auto; padding:20px;}
-    section {margin:20px 0; padding:20px; border-radius:8px; color:#fff;}
+
+    .container {display:flex;}
+    nav {width:220px; background:#2c3e50; color:#fff; min-height:100vh; padding:20px;}
+    nav h2 {color:#fff; font-size:1.2em; margin-bottom:15px;}
+    nav a {color:#fff; text-decoration:none; display:block; margin:10px 0; padding:8px; border-radius:4px;}
+    nav a:hover {background:#34495e;}
+
+    main {flex:1; padding:20px;}
+    section {margin-bottom:20px; padding:20px; border-radius:8px; color:#fff;}
     h2 {margin-top:0;}
+
     .personal {background:#ff6f61;}
     .education {background:#ffa500;}
     .skills {background:#28a745;}
     .experience {background:#17a2b8;}
     .contact {background:#6f42c1;}
+
     .skills span {background:#fff; color:#28a745; padding:5px 10px; margin:5px; border-radius:4px; display:inline-block;}
+
     footer {background:#2c3e50; color:#fff; text-align:center; padding:15px;}
   </style>
 </head>
@@ -27,36 +37,47 @@
   </header>
 
   <div class="container">
-    <section class="personal">
-      <h2>Personal Details</h2>
-      <p>Email: johndoe@example.com | Phone: 9876543210 | Location: Thane, India</p>
-    </section>
+    <nav>
+      <h2>Sections</h2>
+      <a href="#personal">Personal</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
 
-    <section class="education">
-      <h2>Education</h2>
-      <p>B.Tech in Computer Science – XYZ University</p>
-      <p>High School – ABC School</p>
-    </section>
+    <main>
+      <section id="personal" class="personal">
+        <h2>Personal Details</h2>
+        <p>Email: johndoe@example.com<br>Phone: 9876543210<br>Location: Thane, India</p>
+      </section>
 
-    <section class="skills">
-      <h2>Skills</h2>
-      <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Python</span><span>React</span>
-    </section>
+      <section id="education" class="education">
+        <h2>Education</h2>
+        <p>B.Tech in Computer Science – XYZ University</p>
+        <p>High School – ABC School</p>
+      </section>
 
-    <section class="experience">
-      <h2>Experience</h2>
-      <p><strong>Frontend Developer</strong> – Tech Solutions (2022–Present)</p>
-      <p><strong>Intern</strong> – WebWorks (2021)</p>
-    </section>
+      <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Python</span><span>React</span>
+      </section>
 
-    <section class="contact">
-      <h2>Contact</h2>
-      <p>LinkedIn: linkedin.com/in/johndoe<br>GitHub: github.com/johndoe</p>
-    </section>
+      <section id="experience" class="experience">
+        <h2>Experience</h2>
+        <p><strong>Frontend Developer</strong> – Tech Solutions (2022–Present)</p>
+        <p><strong>Intern</strong> – WebWorks (2021)</p>
+      </section>
+
+      <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <p>LinkedIn: linkedin.com/in/johndoe<br>GitHub: github.com/johndoe</p>
+      </section>
+    </main>
   </div>
 
   <footer>
-    <p>&copy; 2026 John Doe | Designed with ❤️</p>
+    <p>&copy; 2026 John Doe | Designed with style ✨</p>
   </footer>
 </body>
 </html>

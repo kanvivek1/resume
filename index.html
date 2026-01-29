@@ -3,70 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Resume | Webpage</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Simple Resume</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 0 20px;
+            background-color: #fff;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 { margin-bottom: 5px; font-size: 28px; }
+        .contact { font-size: 14px; color: #666; }
+
+        section { margin-bottom: 30px; }
+        
+        h2 {
+            font-size: 18px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            color: #0056b3;
+        }
+
+        .item { margin-bottom: 15px; }
+        .item h3 { font-size: 16px; margin: 0; }
+        .item p { margin: 0; font-size: 14px; color: #555; }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            list-style: none;
+            padding: 0;
+        }
+
+        .skills li {
+            background: #f4f4f4;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 13px;
+        }
+    </style>
 </head>
 <body>
 
-    <div class="container">
-        <header>
-            <h1>Your Name</h1>
-            <p class="subtitle">Aspiring Embedded Systems Engineer | Tech Enthusiast</p>
-        </header>
+    <header>
+        <h1>Your Name</h1>
+        <div class="contact">
+            Navi Mumbai, India | your@email.com | LinkedIn
+        </div>
+    </header>
 
-        <main>
-            <section id="about">
-                <h2>About Me</h2>
-                <p>A highly motivated individual with a passion for bridging the gap between hardware and software. Focused on developing efficient, scalable solutions in the field of electronics and automation.</p>
-            </section>
+    <section>
+        <h2>Education</h2>
+        <div class="item">
+            <h3>B.E. in Electronics Engineering</h3>
+            <p>University Name | 2022 – 2026</p>
+        </div>
+    </section>
 
-            <section id="education">
-                <h2>Education</h2>
-                <div class="item">
-                    <h3>Bachelor of Engineering</h3>
-                    <p class="meta">University Name | 2022 - 2026</p>
-                    <p>Relevant coursework: Digital Electronics, Microcontrollers, and Circuit Analysis.</p>
-                </div>
-            </section>
+    <section>
+        <h2>Skills</h2>
+        <ul class="skills">
+            <li>C / C++</li>
+            <li>Embedded Systems</li>
+            <li>STM32 & ESP32</li>
+            <li>Circuit Design</li>
+            <li>HTML/CSS</li>
+        </ul>
+    </section>
 
-            <section id="skills">
-                <h2>Skills</h2>
-                <ul class="skills-list">
-                    <li>C / C++</li>
-                    <li>Embedded Systems (STM32, ESP32)</li>
-                    <li>Circuit Simulation (Proteus/Multisim)</li>
-                    <li>HTML5 & CSS3</li>
-                    <li>Digital Marketing Basics</li>
-                </ul>
-            </section>
+    <section>
+        <h2>Projects</h2>
+        <div class="item">
+            <h3>AgroGuard-Offline</h3>
+            <p>IoT soil monitoring system using ESP32 and voice alerts.</p>
+        </div>
+        <div class="item">
+            <h3>Aakhiri Call</h3>
+            <p>Scripting and technical strategy for a cybersecurity story series.</p>
+        </div>
+    </section>
 
-            <section id="experience">
-                <h2>Projects & Experience</h2>
-                <div class="item">
-                    <h3>AgroGuard-Offline (IoT Project)</h3>
-                    <p class="meta">Lead Developer | Jan 2026</p>
-                    <p>Developed a solar-powered soil monitoring system using ESP32 and voice alerts via DFPlayer Mini for agricultural automation.</p>
-                </div>
-                <div class="item">
-                    <h3>Social Media Branding</h3>
-                    <p class="meta">Freelance / Project | 2025</p>
-                    <p>Designed brand identity and engagement strategies for eco-friendly product startups.</p>
-                </div>
-            </section>
-
-            <section id="contact">
-                <h2>Contact Information</h2>
-                <p><strong>Email:</strong> yourname@email.com</p>
-                <p><strong>LinkedIn:</strong> linkedin.com/in/yourprofile</p>
-                <p><strong>Location:</strong> Navi Mumbai, India</p>
-            </section>
-        </main>
-
-        <footer>
-            <p>&copy; 2026 Your Name. Built with HTML & CSS.</p>
-        </footer>
-    </div>
+    <section>
+        <h2>Contact</h2>
+        <p style="font-size: 14px;">Available for internships and hardware projects.</p>
+    </section>
 
 </body>
 </html>
